@@ -9,7 +9,7 @@ import torchvision.transforms.functional as TF
 from PIL import Image
 from tqdm import tqdm
 
-from u.utils import get_network, str2bool, to_cuda
+from process_utils.utils import get_network, str2bool, to_cuda
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument(

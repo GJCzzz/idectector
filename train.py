@@ -1,4 +1,4 @@
-from u.config import cfg  # isort: split
+from process_utils.config import cfg  # isort: split
 
 import os
 import time
@@ -6,11 +6,11 @@ import time
 from tensorboardX import SummaryWriter
 from tqdm import tqdm
 
-from u.datasets import create_dataloader
-from u.earlystop import EarlyStopping
-from u.eval import get_val_cfg, validate
-from u.trainer import Trainer
-from u.utils import Logger
+from process_utils.datasets import create_dataloader
+from process_utils.earlystop import EarlyStopping
+from process_utils.eval import get_val_cfg, validate
+from process_utils.trainer import Trainer
+from process_utils.utils import Logger
 
 if __name__ == "__main__":
     val_cfg = get_val_cfg(cfg, split="val", copy=True)

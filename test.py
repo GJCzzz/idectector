@@ -1,12 +1,12 @@
-from u.config import cfg  # isort: split
+from process_utils.config import cfg  # isort: split
 
 import csv
 import os
 
 import torch
 
-from u.eval import get_val_cfg, validate
-from u.utils import get_network
+from process_utils.eval import get_val_cfg, validate
+from process_utils.utils import get_network
 
 cfg = get_val_cfg(cfg, split="test", copy=False)
 
