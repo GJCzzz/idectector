@@ -158,6 +158,7 @@ cython_debug/
 .vscode/
 
 data
+organized_dataset
 *.tar.gz
 *.jpg
 *.png
