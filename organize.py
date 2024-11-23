@@ -1,9 +1,9 @@
 import os
 import shutil
 
-source_root = './lsun_bedroom_release'
+source_root = './data/lsun_bedroom_release'
 
-target_root = './organized_dataset'
+target_root = './data/organized_dataset'
 
 real_dataset_name = '0_real'
 
